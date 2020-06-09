@@ -1,0 +1,654 @@
+@import 'normalize.css';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.section-header {
+    width: 1920px;
+    height: 740px;
+    background-color: white;
+    background: url(../img/Rectangle.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.section-header-logo {
+    flex-direction: column;
+    position: absolute;
+    left: 21.09%;
+    right: 75.78%;
+    top: 0.31%;
+    bottom: 98.75%;
+}
+
+.section-header-menu {
+    flex-direction: column;
+    position: absolute;
+    margin-left: 1465px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.section-header-menu:hover {
+    border-radius: 15px;
+    border-color: black;
+}
+
+.section-header-title {
+    position: absolute;
+    width: 734px;
+    height: 171px;
+    left: 593px;
+    top: 192px;
+    color: white;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 95px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.section-header-subtitle {
+    position: absolute;
+    width: 734px;
+    height: 22px;
+    left: 593px;
+    top: 398px;
+    color: white;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.section-header-container {
+    position: absolute;
+    width: 1110px;
+    height: 300px;
+    left: 405px;
+    top: 590px;
+
+    background: #F7F7F7;
+}
+
+#sidebar {
+    
+    height: 100%;
+    width: 405px;
+    background-color: #F7654A;
+    position: fixed;
+    margin-left: 1515px;
+    left: 405px;
+
+    transition: all 600ms;
+    -moz-transition: all 600ms;
+    -webkit-transition: all 600ms;
+
+}
+
+#sidebar ul li:first-child {
+    padding-top: 0;
+    text-align: center;
+    color: white;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+
+
+}
+
+#sidebar ul li:not(first-child){
+    width: 90%;
+    padding-top: 20px;
+    list-style-type: none;
+    text-align: center;
+    color: white;
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+
+}
+
+#sidebar ul li a {
+    color: white;
+    text-decoration: none;
+
+}
+
+#sidebar ul li a:hover {
+    color: black;
+}
+
+#sidebar.active {
+    left: 0px;
+}
+
+.block-num {
+    position: absolute;
+    width: 190px;
+    height: 86px;
+    left: 130px;
+    top: 57px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Accent */
+
+    color: #F7654A;
+}
+
+.block-text {
+    position: absolute;
+    width: 190px;
+    left: 130px;
+    top: 168px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.block-subtext {
+    position: absolute;
+    width: 190px;
+    height: 22px;
+    left: 130px;
+    top: 221px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    /* gray */
+
+    color: #999999;
+}
+
+.block-num2 {
+    position: absolute;
+    width: 190px;
+    height: 86px;
+    left: 350px;
+    top: 57px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Accent */
+
+    color: #F7654A;
+}
+
+.block-text2 {
+    position: absolute;
+    width: 190px;
+    left: 350px;
+    top: 168px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.block-subtext2 {
+    position: absolute;
+    width: 190px;
+    height: 22px;
+    left: 350px;
+    top: 221px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    /* gray */
+
+    color: #999999;
+}
+
+.block-num3 {
+    position: absolute;
+    width: 190px;
+    height: 86px;
+    left: 570px;
+    top: 57px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Accent */
+
+    color: #F7654A;
+}
+
+.block-text3 {
+    position: absolute;
+    width: 190px;
+    left: 570px;
+    top: 168px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.block-subtext3 {
+    position: absolute;
+    width: 190px;
+    height: 22px;
+    left: 570px;
+    top: 221px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    /* gray */
+
+    color: #999999;
+}
+
+.block-num4 {
+    position: absolute;
+    width: 190px;
+    height: 86px;
+    left: 790px;
+    top: 57px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 107px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Accent */
+
+    color: #F7654A;
+}
+
+.block-text4 {
+    position: absolute;
+    width: 190px;
+    left: 790px;
+    top: 168px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #000000;
+}
+
+.block-subtext4 {
+    position: absolute;
+    width: 190px;
+    height: 22px;
+    left: 790px;
+    top: 221px;
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    text-align: center;
+
+    /* gray */
+
+    color: #999999;
+}
+
+.projects-title {
+    position: absolute;
+    width: 506px;
+    height: 43px;
+    left: 706px;
+    top: 990px;
+
+    /* h2 */
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 53px;
+    text-align: center;
+    text-transform: uppercase;
+
+    /* Dark */
+
+    color: #404149;
+}
+
+.block-project-1 {
+    position: absolute;
+    width: 350px;
+    height: 380px;
+    left: 405px;
+    top: 1093px;
+
+    background: url(../img/kad-vantovy.png) no-repeat 50%;
+    background-size: cover;
+}
+
+.block-project-1-title {
+    position: absolute;
+    width: 300px;
+    height: 29px;
+    left: 405px;
+    top: 1539px;
+
+    /* h3 */
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+
+    /* Dark */
+
+    color: #404149;
+}
+
+.block-project-1-text {
+    position: absolute;
+    width: 350px;
+    height: 83px;
+    left: 405px;
+    top: 1588px;
+
+    /* p */
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #999999;
+}
+
+.block-project-1-line {
+    position: absolute;
+    width: 55px;
+    height: 6px;
+    left: 405px;
+    top: 1518px;
+
+    /* Accent */
+
+    background: #F7654A;
+}
+
+.section-project {
+    display: inline
+}
+
+.block-project-2-text {
+    position: absolute;
+    width: 350px;
+    height: 83px;
+    left: 785px;
+    top: 1588px;
+
+    /* p */
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #999999;
+}
+
+.block-project-2 {
+    position: absolute;
+    width: 350px;
+    height: 380px;
+    left: 785px;
+    top: 1093px;
+
+    background: url(../img/dam.jpg) 50%;
+}
+
+.block-project-2-title {
+    position: absolute;
+    width: 300px;
+    height: 29px;
+    left: 785px;
+    top: 1539px;
+
+    /* h3 */
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    /* Dark */
+
+    color: #404149;
+}
+
+.block-project-2-line {
+    position: absolute;
+    width: 55px;
+    height: 6px;
+    left: 785px;
+    top: 1518px;
+
+    /* Accent */
+
+    background: #F7654A;
+}
+
+.block-project-3 {
+    position: absolute;
+    width: 350px;
+    height: 380px;
+    left: 1165px;
+    top: 1093px;
+
+    background: url(../img/Recta.png) no-repeat;
+}
+
+.block-project-3-line {
+    position: absolute;
+    width: 55px;
+    height: 6px;
+    left: 1165px;
+    top: 1518px;
+
+    /* Accent */
+
+    background: #F7654A;
+}
+
+.block-project-3-title {
+    position: absolute;
+    width: 142px;
+    height: 29px;
+    left: 1165px;
+    top: 1539px;
+
+    /* h3 */
+
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+
+    /* Dark */
+
+    color: #404149;
+}
+
+.block-project-3-text {
+    position: absolute;
+    width: 350px;
+    height: 83px;
+    left: 1165px;
+    top: 1588px;
+
+    /* p */
+
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: #999999;
+}
+
+.banner {
+    position: absolute;
+    width: 1920px;
+    height: 181px;
+    left: 0px;
+    top: 1821px;
+
+    /* Accent */
+
+    background: #F7654A;
+}
+
+.banner-subtitle {
+    position: absolute;
+    width: 562px;
+    height: 29px;
+    left: 405px;
+    top: 107px;
+    
+    font-family: Oswald;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    
+    color: white;
+    
+}
+
+.banner-title {
+    position: absolute;
+    padding-top: 50px;
+width: 537px;
+height: 57px;
+left: 405px;
+
+
+font-family: Oswald;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+line-height: 71px;
+letter-spacing: 0.02em;
+
+color: white;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0;
+    position: absolute;
+width: 175px;
+height: 49px;
+left: 1340px;
+top: 73px;
+position: absolute;
+width: 175px;
+height: 49px;
+z-index: 1;
+font-family: Oswald;
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 21px;
+/* identical to box height */
+
+letter-spacing: 0.05em;
+text-align: right;
+padding-right: 30px;
+background: #FFFFFF;
+
+outline: none;
+   
+}
+
+.img {
+    position: relative;
+ right: 15px;
+}
